@@ -4,10 +4,14 @@ function log(texto){
   const date = formatted_date();
   const dateHour = formatted_date_hours();
   
-  fs.appendFileSync(`./logs/log_${date}.txt`, `${dateHour} -> ${texto}\n`, (err) => {
-    if (err) throw err;
-    console.log('The text was appended to file!');
-  });
+try {
+  fs.appendFileSync(`./logs/log_${date}.txt`, `${dateHour} -> ${texto}\n`)
+  console.log("Se escribio correctamente en el log");
+} catch (error) {
+  console.log("Error: ->",error);
+}
+
+ 
 }
 
 
