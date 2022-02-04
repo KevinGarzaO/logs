@@ -2,14 +2,18 @@
   "name": "logs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.2"
-  },
-  "devDependencies": {},
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-    },
+   "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinGarzaO/logs.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinGarzaO/logs/issues"
+  },
+  "homepage": "https://github.com/KevinGarzaO/logs#readme"
 }
